@@ -5,6 +5,10 @@
   border: 1px solid blue;
 }
 
+.stopwatchTitle {
+  text-align: center;
+}
+
 .watch {
   width: 80%;
   text-align: center;
