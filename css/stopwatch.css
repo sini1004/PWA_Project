@@ -1,0 +1,50 @@
+#stopwatch {
+  max-width: 640px;
+  min-width: 360px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.watch {
+  width: 80%;
+  text-align: center;
+  background-color: #115cff;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.time {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls button {
+  padding: 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #333;
+  transition: 0.4s;
+  border-radius: 1rem;
+  font-size: 1.125rem;
+}
+.controls button:hover {
+  opacity: 0.7;
+}
+.controls button:active {
+  background-color: #115cff;
+}
+
+/*# sourceMappingURL=stopwatch.css.map */
