@@ -1,3 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+section,
+aside,
+article,
+footer,
+nav,
+menu,
+details,
+figure,
+figcaption {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
 #stopwatch {
   max-width: 640px;
   min-width: 360px;
@@ -51,4 +84,22 @@
   background-color: #115cff;
 }
 
-/*# sourceMappingURL=stopwatch.css.map */
+#recordsCover {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+#recordsCover #recordList {
+  text-align: left;
+  font-size: 30px;
+  border-radius: 1rem;
+}
+#recordsCover #recordList li {
+  list-style: none;
+  background: #e3ecff;
+  padding: 0.8rem;
+  margin: 0.7rem 0;
+  border-radius: 0.8rem;
+}
+
+/*# sourceMappingURL=main.css.map */

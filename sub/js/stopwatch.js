@@ -3,14 +3,19 @@ const $time = document.querySelector(".watch .time");
 const $start_btn = document.getElementById("start");
 const $stop_btn = document.getElementById("stop");
 const $reset_btn = document.getElementById("reset");
+const $record_btn = document.getElementById("record");
+
+const $record_list = document.getElementById("recordList");
 
 let $seconds = 0;
 let $interval = null;
+let $records = "";
 
 //EventListener
 $start_btn.addEventListener("click", start);
 $stop_btn.addEventListener("click", stop);
 $reset_btn.addEventListener("click", reset);
+$record_btn.addEventListener("click", record);
 
 //시간 업데이트
 const timer = () => {
@@ -51,4 +56,24 @@ function reset() {
 	stop();
 	$seconds = 0;
 	$time.innerText = "00:00:00";
+	$record_list.innerText = '';
+	$records = '';
 }
+
+function record() {
+	// $records += "" + document.getElementById("time").innerText + "\n";
+	// $record_list.innerText = $records;
+
+	// $records = document.getElementById("time").innerText + "\n";
+	// $record_list.append("<li>" + $records + "</li>");
+	// console.log($record_list, $records)
+
+	const li = document.createElement('li');
+	li.setAttribute('id', $record_list );
+	const textNode = document.createTextNode($record_list);
+	li.appendChild(textNode);
+
+	document.getElementById('recordList').appendChild(li);
+	console.log(textNode);
+}
+	
