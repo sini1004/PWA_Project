@@ -18,61 +18,58 @@ $record_btn.addEventListener("click", record);
 
 //시간 업데이트
 const timer = () => {
-	$seconds++;
+  $seconds++;
 
-	//시간, 분, 초 format
-	let $secs = $seconds % 60;
-	let $mins = Math.floor($seconds / 60);
-	let $hrs = Math.floor($mins / 60);
+  //시간, 분, 초 format
+  let $secs = $seconds % 60;
+  let $mins = Math.floor($seconds / 60);
+  let $hrs = Math.floor($mins / 60);
 
-	//한자리 -> 두자리 처리
-	if ($secs < 10) {
-		$secs = "0" + $secs;
-	}
-	if ($mins < 10) {
-		$mins = "0" + $mins;
-	}
-	if ($hrs < 10) {
-		$hrs = "0" + $hrs;
-	}
+  //한자리 -> 두자리 처리
+  if ($secs < 10) {
+    $secs = "0" + $secs;
+  }
+  if ($mins < 10) {
+    $mins = "0" + $mins;
+  }
+  if ($hrs < 10) {
+    $hrs = "0" + $hrs;
+  }
 
-	$time.innerText = `${$hrs}:${$mins}:${$secs}`;
+  $time.innerText = `${$hrs}:${$mins}:${$secs}`;
 };
 
 function start() {
-	if ($interval) {
-		return;
-	}
-	$interval = setInterval(timer, 1000);
+  if ($interval) {
+    return;
+  }
+  $interval = setInterval(timer, 1000);
 }
 
 function stop() {
-	clearInterval($interval);
-	$interval = null;
+  clearInterval($interval);
+  $interval = null;
 }
 
 function reset() {
-	stop();
-	$seconds = 0;
-	$time.innerText = "00:00:00";
-	$record_list.innerText = '';
-	$records = '';
+  stop();
+  $seconds = 0;
+  $time.innerText = "00:00:00";
+  $record_list.innerText = '';
+  $records = '';
 }
 
 function record() {
-	// $records += "" + document.getElementById("time").innerText + "\n";
-	// $record_list.innerText = $records;
+  // $records += "" + document.getElementById("time").innerText + "\n";
+  // $record_list.innerText = $records;
 
-	// $records = document.getElementById("time").innerText + "\n";
-	// $record_list.append("<li>" + $records + "</li>");
-	// console.log($record_list, $records)
+  // $records = document.getElementById("time").innerText + "\n";
+  // $record_list.append("<li>" + $records + "</li>");
+  // console.log($record_list, $records)
 
-	const li = document.createElement('li');
-	li.setAttribute('id',$records );
-	const textNode = document.createTextNode($record_list);
-	li.appendChild(textNode);
-
-	document.getElementById('recordList').appendChild(li);
-	console.log(textNode);
+  const $li = document.createElement('li');
+  $li.innerHTML = document.getElementById("time").innerText;
+  document.getElementById('recordList').appendChild($li);
+  
 }
-	
+  
