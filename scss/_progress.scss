@@ -1,0 +1,52 @@
+/*progress*/
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 10001;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $point1;
+  transition: 0.6s cubic-bezier(0.42, 0, 0.13, 1.04) 1s;
+  .loading {
+    width: 70vw;
+    max-width: 60vw;
+    height: 22vw;
+    border-radius: 1rem;
+    display: flex;
+    background: $point;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+      width: 30vw;
+      animation: loadImg 0.5s infinite alternate cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+  }
+  .progress-text {
+    margin-top: 7%;
+    margin-left: 1%;
+    font-size: 5vw;
+    color: $point;
+  }
+}
+.progress.active {
+  /*	top: -120%;*/
+  /*	opacity: 0;*/
+  transform: scale(0);
+  opacity: 0;
+}
+
+@keyframes loadImg {
+  from {
+    transform: translateY(-3%);
+  }
+  to {
+    transform: translateY(3%);
+  }
+}

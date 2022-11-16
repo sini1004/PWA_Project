@@ -4,7 +4,6 @@ const $start_btn = document.getElementById("start");
 const $stop_btn = document.getElementById("stop");
 const $reset_btn = document.getElementById("reset");
 const $record_btn = document.getElementById("record");
-
 const $record_list = document.getElementById("recordList");
 
 let $seconds = 0;
@@ -69,7 +68,7 @@ function record() {
 	// console.log($record_list, $records)
 
 	const li = document.createElement('li');
-	li.setAttribute('id', $record_list );
+	li.setAttribute('id',$records );
 	const textNode = document.createTextNode($record_list);
 	li.appendChild(textNode);
 
