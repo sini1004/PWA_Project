@@ -84,6 +84,11 @@ img {
     transform: translateY(3%);
   }
 }
+#login {
+  background-color: #e3ecff;
+  width: 100%;
+  height: 100vh;
+}
 #login .login_wrapper {
   width: 100%;
 }
