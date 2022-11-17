@@ -1,21 +1,46 @@
+/* ========== login ========== */
+
+@mixin loginbutton {
+	width: 60vw;
+	padding: 1rem 0.8rem;
+	margin: 0.3rem 0;
+	border-radius: 0.5rem;
+	border: none;
+	font-size: 1.2rem;
+}
+
 #login {
 	background-color: $point1;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
+	display: flex;
+	align-items: center;
 	.login_wrapper {
 		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		.login_logo {
 			img {
 				width: 30vw;
+				margin: 3vh 0;
 			}
 		}
 		.login_form {
 			.login_text {
+				@include loginbutton();
+				color: $gray2;
 			}
 			.login_btn {
+				@include loginbutton();
+				background-color: $gray2;
+				color: $white;
 			}
 		}
-		.login_button {
+		.login_bottom {
+			margin-top: 1rem;
+			color: $gray3;
 		}
 	}
 }
