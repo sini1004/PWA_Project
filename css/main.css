@@ -84,6 +84,12 @@ img {
     transform: translateY(3%);
   }
 }
+#login .login_wrapper {
+  width: 100%;
+}
+#login .login_wrapper .login_logo img {
+  width: 30vw;
+}
 #stopwatch {
   max-width: 640px;
   min-width: 360px;
