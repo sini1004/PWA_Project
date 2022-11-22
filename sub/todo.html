@@ -5,20 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TodoList</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
   <div class="container">
-    <h5>Write down things to do today</h5>
-
-    <form class="js-toDoForm">
-      <input type="text" placeholder=""/>
+    <form id="todo_form">
+      <input type="text" placeholder="오늘의 할일">
     </form>
-    <ul class="js-toDoList">
-    </ul> 
+    <ul id="todo_list">
+
+    </ul>
   </div>
   
-  <script src="js/todo.js"></script>
 </body>
+
+<script defer src="./js/todo.js"></script>
 </html>
