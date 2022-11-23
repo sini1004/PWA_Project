@@ -36,7 +36,6 @@ img {
 .container {
   max-width: 640px;
   min-width: 270px;
-  height: 100vh;
   margin: 0 auto;
   background: white;
   position: relative;
