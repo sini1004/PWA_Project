@@ -3,19 +3,17 @@
 .home {
   background-color: $main-bg;
 }
-
+.contents {
+  padding: 0 20px;
+}
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   max-width: 640px;
   min-width: 270px;
   margin: 0 auto;
-  background-color: white;
   h1 {
     text-align: center;
-    line-height: 46px;
+    line-height: 55px;
     a {
       display: inline-block;
       width: 147px;
@@ -31,38 +29,202 @@ header {
     position: absolute;
     top: 6px;
     left: 12px;
-    .ico_gnb_menu {
-      width: 24px;
-      height: 24px;
-      background-position: -520px -60px;
-    }
     button {
       padding: 5px;
     }
-    .ico_dot {
-      position: absolute;
-      top: 5px;
-      right: 3px;
-    }
-    .ico_search {
-      width: 24px;
-      height: 24px;
+    .ico_alarm {
+      img {
+        width: 26px;
+      }
     }
   }
   .top_right {
     position: absolute;
     top: 6px;
     right: 12px;
+    button {
+      background: transparent;
+      border: none;
+    }
+    img {
+      width: 26px;
+    }
   }
-  button {
-    padding: 5px;
+}
+
+/*  */
+.dark {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: none;
+}
+
+/* gnb */
+#gnb {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -243px;
+  width: 243px;
+  border-radius: 20px 0 0 20px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 9999;
+  .inner {
+    width: 243px;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+    .info_user {
+      padding: 32px 24px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .info_login {
+        font-weight: bold;
+        letter-spacing: -1.8px;
+      }
+      .info_inquiry {
+        font-size: 13px;
+        letter-spacing: -0.5px;
+      }
+    }
+    .list_menu {
+      li {
+        padding: 15px 0;
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            width: 26px;
+          }
+          span {
+            margin-left: 10px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .btn_menu {
+      position: relative;
+      width: 100%;
+      padding: 0 24px;
+      text-align: left;
+      color: $font-color1;
+      font: {
+        size: 1rem;
+        weight: 400;
+      }
+    }
   }
-  .ico_search {
-    background-position: -40px -20px;
-  }
-  .ico_global {
-    background-position: -440px -60px;
-    width: 24px;
-    height: 24px;
-  }
+}
+
+#gnb .inner .info_user .ico_arrow_right {
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background-position: -140px 0;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+#gnb .inner .list_menu .ico_dot {
+  position: relative;
+  bottom: 12px;
+}
+#gnb .inner .list_menu .ico_arrow {
+  float: right;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-position: -360px 0;
+  margin-top: 15px;
+}
+#gnb .inner .list_menu .ico_arrow.on {
+  background-position: -340px 0;
+}
+#gnb .inner .list_menu li.line {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eff0f2;
+}
+
+.list_sub_wrap {
+  display: none;
+}
+.list_charactor {
+  padding: 16px 14px;
+  font-size: 0; /* 자식요소 inline-block 사용시 여백을 막아주는 방법 */
+}
+.list_charactor li {
+  display: inline-block;
+  width: 25%;
+  padding-bottom: 20px;
+}
+.list_charactor li a {
+  display: block;
+  padding: 0 10px;
+}
+
+.img_charactor {
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  background: no-repeat 50% 50% / cover;
+  border-radius: 50%;
+}
+.txt_charactor {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 8px;
+}
+
+.list_sub_wrap {
+  display: none;
+}
+.list_category {
+  padding: 8px 10px 8px 24px;
+  font-size: 0;
+}
+.list_category li {
+  display: inline-block;
+  width: 50%;
+}
+.list_category li a {
+  display: block;
+  font-size: 14px;
+  padding: 12px 0;
+}
+
+.banner {
+}
+.banner a {
+  display: block;
+  padding: 0 14px;
+}
+.banner img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.login {
+}
+.login a {
+  display: block;
+  text-align: center;
+  padding: 25px;
+}
+.login .ico_gnb_lock {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-position: -560px -20px;
+  vertical-align: top;
 }
