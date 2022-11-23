@@ -195,5 +195,23 @@ header {
     border-radius: 10px;
     background-image: linear-gradient(to top, #6040e4, #62abff);
     padding: 30px 20px;
+    span {
+      color: $white;
+      display: block;
+      &:nth-child(1) {
+        letter-spacing: 2px;
+        font: {
+          size: 28px;
+          weight: 800;
+        }
+      }
+      &:nth-child(2) {
+        margin-top: 10px;
+        font: {
+          size: 21px;
+          weight: 300;
+        }
+      }
+    }
   }
 }

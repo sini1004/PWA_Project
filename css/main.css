@@ -225,6 +225,20 @@ header .top_right img {
   background-image: linear-gradient(to top, #6040e4, #62abff);
   padding: 30px 20px;
 }
+#englishword .word span {
+  color: #ffffff;
+  display: block;
+}
+#englishword .word span:nth-child(1) {
+  letter-spacing: 2px;
+  font-size: 28px;
+  font-weight: 800;
+}
+#englishword .word span:nth-child(2) {
+  margin-top: 10px;
+  font-size: 21px;
+  font-weight: 300;
+}
 
 /* ========== progress ========== */
 .progress {
