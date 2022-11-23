@@ -228,3 +228,37 @@ header {
   background-position: -560px -20px;
   vertical-align: top;
 }
+
+/* ========== slide_banner ========== */
+#slide {
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* ========== everyday_button ========== */
+#everyday {
+  .every_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    .timer,
+    .todo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      img {
+        width: 30px;
+        margin: 0 auto;
+      }
+      p {
+        color: $gray2;
+        font-size: 1.1rem;
+        margin-top: 5px;
+      }
+    }
+  }
+}
