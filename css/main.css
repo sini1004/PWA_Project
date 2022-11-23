@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -208,6 +209,21 @@ header .top_right img {
   color: #444;
   font-size: 1.1rem;
   margin-top: 5px;
+}
+
+/* ========== word(영단어 랜덤) ========== */
+#englishword .word_title {
+  margin-bottom: 10px;
+}
+#englishword .word_title span {
+  color: #4498f2;
+  margin-left: 5px;
+}
+#englishword .word {
+  width: 100%;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #6040e4, #62abff);
+  padding: 30px 20px;
 }
 
 /* ========== progress ========== */

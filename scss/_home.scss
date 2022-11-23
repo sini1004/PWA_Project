@@ -180,3 +180,20 @@ header {
     }
   }
 }
+
+/* ========== word(영단어 랜덤) ========== */
+#englishword {
+  .word_title {
+    margin-bottom: 10px;
+    span {
+      color: $point2;
+      margin-left: 5px;
+    }
+  }
+  .word {
+    width: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #6040e4, #62abff);
+    padding: 30px 20px;
+  }
+}
