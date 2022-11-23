@@ -40,6 +40,73 @@ img {
   position: relative;
 }
 
+.home {
+  background-color: #f0f4f7;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 640px;
+  min-width: 270px;
+  margin: 0 auto;
+  background-color: white;
+}
+header h1 {
+  text-align: center;
+  line-height: 46px;
+}
+header h1 a {
+  display: inline-block;
+  width: 147px;
+  height: 24px;
+  background-image: url(../img/logo_kakaofriends.png);
+  background-size: 147px 24px;
+}
+header h1 a span {
+  display: none;
+}
+header .top_left {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+header .top_left .ico_gnb_menu {
+  width: 24px;
+  height: 24px;
+  background-position: -520px -60px;
+}
+header .top_left button {
+  padding: 5px;
+}
+header .top_left .ico_dot {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+}
+header .top_left .ico_search {
+  width: 24px;
+  height: 24px;
+}
+header .top_right {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+}
+header button {
+  padding: 5px;
+}
+header .ico_search {
+  background-position: -40px -20px;
+}
+header .ico_global {
+  background-position: -440px -60px;
+  width: 24px;
+  height: 24px;
+}
+
 /*progress*/
 .progress {
   position: absolute;

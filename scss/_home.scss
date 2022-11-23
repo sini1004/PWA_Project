@@ -1,0 +1,66 @@
+.home {
+  background-color: $main-bg;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 640px;
+  min-width: 270px;
+  margin: 0 auto;
+  background-color: white;
+  h1 {
+    text-align: center;
+    line-height: 46px;
+    a {
+      display: inline-block;
+      width: 147px;
+      height: 24px;
+      background-image: url(../img/logo_kakaofriends.png);
+      background-size: 147px 24px;
+      span {
+        display: none;
+      }
+    }
+  }
+  .top_left {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    .ico_gnb_menu {
+      width: 24px;
+      height: 24px;
+      background-position: -520px -60px;
+    }
+    button {
+      padding: 5px;
+    }
+    .ico_dot {
+      position: absolute;
+      top: 5px;
+      right: 3px;
+    }
+    .ico_search {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .top_right {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+  }
+  button {
+    padding: 5px;
+  }
+  .ico_search {
+    background-position: -40px -20px;
+  }
+  .ico_global {
+    background-position: -440px -60px;
+    width: 24px;
+    height: 24px;
+  }
+}
