@@ -1,67 +1,66 @@
 /* ========== stopwatch ========== */
 
 #stopwatch {
-  max-width: 640px;
-  min-width: 360px;
+  width: 100%;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 .stopwatchTitle {
   text-align: center;
+  font-size: 24px;
+  color: $gray2;
 }
 .watch {
-  width: 80%;
+  width: 100%;
   text-align: center;
-  background-color: $point;
-  margin: 4rem auto;
-  padding: 2rem;
+  background-color: $point2;
+  margin: 50px auto;
+  padding: 40px 5px;
   border-radius: 1rem;
-}
-.time {
-  font-size: 4rem;
-  color: $white;
-  margin-bottom: 1rem;
+  .time {
+    font-size: 42px;
+    color: $white;
+    margin-bottom: 1rem;
+  }
 }
 .controls {
   display: flex;
   align-items: center;
   justify-content: center;
   button {
-    padding: 1rem;
-    margin: 0 0.5rem;
+    padding: 12px 8px;
+    margin: 0 4px;
     border: none;
     appearance: none;
-    background: none;
     outline: none;
     user-select: none;
     cursor: pointer;
-    color: $white;
-    background-color: $font-color3;
-    transition: 0.4s;
-    border-radius: 1rem;
-    font-size: 1.125rem;
+    color: $font-color1;
+    background-color: $white;
+    transition: 0.2s;
+    border-radius: 8px;
+    font-size: 1rem;
     &:hover {
       opacity: 0.7;
     }
     &:active {
       background-color: #115cff;
+      color: $white;
     }
   }
 }
 #recordsCover {
-  width: 80%;
-  height: 100%;
+  width: 100%;
   margin: auto;
   #recordList {
     text-align: left;
-    font-size: 30px;
-    border-radius: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
     li {
       list-style: none;
       background: $point1;
-      padding: 0.8rem;
-      margin: 0.7rem 0;
-      border-radius: 0.8rem;
+      padding: 0.5rem;
+      margin: 0.4rem 0;
+      border-radius: 8px;
     }
   }
 }
