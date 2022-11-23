@@ -19,10 +19,8 @@ const getDDay = () => {
 	const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	$ddayTime.innerText = `${setDateYear}년 ${setDateMonth}월 ${setDateDay}일까지 
-      ${day}일 
-      ${hours < 10 ? `0${hours}` : hours}시간 
-      ${minutes < 10 ? `0${minutes}` : minutes}분 
-      ${seconds < 10 ? `0${seconds}` : seconds}초 남았습니다.`;
+      ${day}일  ${hours < 10 ? `0${hours}` : hours}시간  ${minutes < 10 ? `0${minutes}` : minutes}분 ${seconds < 10 ? `0${seconds}` : seconds}초 
+			남았습니다.`;
 };
 
 const init = () => {
