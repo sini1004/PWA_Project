@@ -14,10 +14,10 @@ $loginBtn.addEventListener('click',moveToMain);
 function color() {
   if(($loginId.value.length>0 && $loginId.value.indexOf("@")!==-1) 
     && $loginPw.value.length>=5){
-    $loginBtn.style.backgroundColor = "#115cff";
+    $loginBtn.style.backgroundColor = "#4498f2";
     $loginBtn.disabled = false;
   }else{
-    $loginBtn.style.backgroundColor = "#115cff";
+    $loginBtn.style.backgroundColor = "#4498f2";
     $loginBtn.disabled = true;
   }
 }
