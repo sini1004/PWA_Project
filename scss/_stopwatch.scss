@@ -39,9 +39,6 @@
     transition: 0.2s;
     border-radius: 8px;
     font-size: 1rem;
-    &:hover {
-      opacity: 0.7;
-    }
     &:active {
       background-color: #115cff;
       color: $white;
