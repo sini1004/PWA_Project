@@ -47,7 +47,7 @@ img {
 }
 
 .contents {
-  padding: 0 20px;
+  padding: 20px;
 }
 
 header {
@@ -55,40 +55,37 @@ header {
   max-width: 640px;
   min-width: 270px;
   margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
 }
 header h1 {
   text-align: center;
-  line-height: 55px;
+  line-height: 60px;
 }
 header h1 a {
   display: inline-block;
   width: 147px;
   height: 24px;
-  background-image: url(../img/logo_kakaofriends.png);
-  background-size: 147px 24px;
 }
 header h1 a span {
   display: none;
 }
+header button {
+  background: transparent;
+  border: none;
+}
 header .top_left {
   position: absolute;
-  top: 6px;
+  top: 0px;
   left: 12px;
 }
-header .top_left button {
-  padding: 5px;
-}
 header .top_left .ico_alarm img {
-  width: 26px;
+  width: 29px;
 }
 header .top_right {
   position: absolute;
-  top: 6px;
+  top: 0px;
   right: 12px;
-}
-header .top_right button {
-  background: transparent;
-  border: none;
 }
 header .top_right img {
   width: 26px;

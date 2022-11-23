@@ -4,48 +4,50 @@
   background-color: $main-bg;
 }
 .contents {
-  padding: 0 20px;
+  padding: 20px;
 }
+
+@mixin header_top() {
+  position: absolute;
+  top: 0px;
+}
+
 header {
   position: relative;
   max-width: 640px;
   min-width: 270px;
   margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
   h1 {
     text-align: center;
-    line-height: 55px;
+    line-height: 60px;
     a {
       display: inline-block;
       width: 147px;
       height: 24px;
-      background-image: url(../img/logo_kakaofriends.png);
-      background-size: 147px 24px;
       span {
         display: none;
       }
     }
   }
+
+  button {
+    background: transparent;
+    border: none;
+  }
   .top_left {
-    position: absolute;
-    top: 6px;
+    @include header_top();
     left: 12px;
-    button {
-      padding: 5px;
-    }
     .ico_alarm {
       img {
-        width: 26px;
+        width: 29px;
       }
     }
   }
   .top_right {
-    position: absolute;
-    top: 6px;
+    @include header_top();
     right: 12px;
-    button {
-      background: transparent;
-      border: none;
-    }
     img {
       width: 26px;
     }
