@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -150,6 +149,11 @@ header .top_right img {
   margin-left: 10px;
   margin-top: 2px;
 }
+#gnb .inner .list_menu li.line {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eff0f2;
+}
 #gnb .inner .btn_menu {
   position: relative;
   width: 100%;
@@ -158,104 +162,6 @@ header .top_right img {
   color: #111;
   font-size: 1rem;
   font-weight: 400;
-}
-
-#gnb .inner .info_user .ico_arrow_right {
-  display: inline-block;
-  width: 14px;
-  height: 13px;
-  background-position: -140px 0;
-  vertical-align: top;
-  margin-top: 2px;
-}
-
-#gnb .inner .list_menu .ico_dot {
-  position: relative;
-  bottom: 12px;
-}
-
-#gnb .inner .list_menu .ico_arrow {
-  float: right;
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  background-position: -360px 0;
-  margin-top: 15px;
-}
-
-#gnb .inner .list_menu .ico_arrow.on {
-  background-position: -340px 0;
-}
-
-#gnb .inner .list_menu li.line {
-  margin-bottom: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #eff0f2;
-}
-
-.list_sub_wrap {
-  display: none;
-}
-
-.list_charactor {
-  padding: 16px 14px;
-  font-size: 0; /* 자식요소 inline-block 사용시 여백을 막아주는 방법 */
-}
-
-.list_charactor li {
-  display: inline-block;
-  width: 25%;
-  padding-bottom: 20px;
-}
-
-.list_charactor li a {
-  display: block;
-  padding: 0 10px;
-}
-
-.img_charactor {
-  display: block;
-  width: 100%;
-  padding-top: 100%;
-  background: no-repeat 50% 50%/cover;
-  border-radius: 50%;
-}
-
-.txt_charactor {
-  display: block;
-  text-align: center;
-  font-size: 12px;
-  padding-top: 8px;
-}
-
-.list_sub_wrap {
-  display: none;
-}
-
-.list_category {
-  padding: 8px 10px 8px 24px;
-  font-size: 0;
-}
-
-.list_category li {
-  display: inline-block;
-  width: 50%;
-}
-
-.list_category li a {
-  display: block;
-  font-size: 14px;
-  padding: 12px 0;
-}
-
-.banner a {
-  display: block;
-  padding: 0 14px;
-}
-
-.banner img {
-  width: 100%;
-  border-radius: 8px;
 }
 
 .login a {
