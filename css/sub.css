@@ -1,5 +1,11 @@
+header {
+  border-bottom: 2px solid #f8f8f8;
+}
 header h1 a span {
   display: block;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=sub.css.map */

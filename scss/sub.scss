@@ -1,8 +1,16 @@
+@import "color.scss";
+
 header {
+  border-bottom: 2px solid $gray5;
   h1 {
     a {
       span {
         display: block;
+        color: $font-color3;
+        font: {
+          size: 18px;
+          weight: 500;
+        }
       }
     }
   }

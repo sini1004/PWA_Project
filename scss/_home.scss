@@ -17,15 +17,13 @@ header {
   max-width: 640px;
   min-width: 270px;
   margin: 0 auto;
-  height: 60px;
-  line-height: 60px;
+  height: 75px;
+  line-height: 70px;
   h1 {
     text-align: center;
-    line-height: 60px;
+    line-height: 70px;
     a {
       display: inline-block;
-      width: 147px;
-      height: 24px;
       span {
         display: none;
       }
@@ -49,7 +47,7 @@ header {
     @include header_top();
     right: 12px;
     img {
-      width: 26px;
+      width: 24px;
     }
   }
 }

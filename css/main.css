@@ -55,17 +55,15 @@ header {
   max-width: 640px;
   min-width: 270px;
   margin: 0 auto;
-  height: 60px;
-  line-height: 60px;
+  height: 75px;
+  line-height: 70px;
 }
 header h1 {
   text-align: center;
-  line-height: 60px;
+  line-height: 70px;
 }
 header h1 a {
   display: inline-block;
-  width: 147px;
-  height: 24px;
 }
 header h1 a span {
   display: none;
@@ -88,7 +86,7 @@ header .top_right {
   right: 12px;
 }
 header .top_right img {
-  width: 26px;
+  width: 24px;
 }
 
 /*  */
