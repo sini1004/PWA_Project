@@ -190,12 +190,19 @@ header .top_right img {
   align-items: center;
   text-align: center;
 }
+#everyday .every_wrap a {
+  width: 40%;
+}
+#everyday .every_wrap .timer {
+  border-right: 2px solid #ecedf1;
+}
 #everyday .every_wrap .timer,
 #everyday .every_wrap .todo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 100%;
 }
 #everyday .every_wrap .timer img,
 #everyday .every_wrap .todo img {
@@ -210,6 +217,9 @@ header .top_right img {
 }
 
 /* ========== word(영단어 랜덤) ========== */
+#englishword {
+  margin-top: 40px;
+}
 #englishword .word_title {
   margin-bottom: 10px;
 }
@@ -428,6 +438,10 @@ header .top_right img {
   background-color: #ffffff;
   padding: 30px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.14);
+}
+#dday .dday_wrap .dday_day {
+  font-size: 21px;
+  color: #444;
 }
 #dday .dday_wrap .ddayTime {
   padding: 10px 0;
