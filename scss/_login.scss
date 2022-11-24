@@ -2,7 +2,7 @@
 
 @mixin loginbutton {
 	width: 100%;
-	padding: 1.2rem 1rem;
+	padding: 0.8rem 1rem;
 	margin: 0.6rem 0;
 	border-radius: 50px;
 	border: none;
@@ -30,7 +30,7 @@
 			}
 		}
 		.login_form {
-			width: 60%;
+			width: 70%;
 			.login_text {
 				@include loginbutton();
 				color: $gray2;

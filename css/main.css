@@ -315,11 +315,11 @@ header .top_right img {
   margin: 3vh 0;
 }
 #login .login_wrapper .login_form {
-  width: 60%;
+  width: 70%;
 }
 #login .login_wrapper .login_form .login_text {
   width: 100%;
-  padding: 1.2rem 1rem;
+  padding: 0.8rem 1rem;
   margin: 0.6rem 0;
   border-radius: 50px;
   border: none;
@@ -329,7 +329,7 @@ header .top_right img {
 }
 #login .login_wrapper .login_form .login_btn {
   width: 100%;
-  padding: 1.2rem 1rem;
+  padding: 0.8rem 1rem;
   margin: 0.6rem 0;
   border-radius: 50px;
   border: none;
