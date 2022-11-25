@@ -1,3 +1,5 @@
+"use strict";
+
   // gnb가 왼쪽에서 나옴
   $('.gnb_btn').click(function(){
     $('#gnb').animate({right : 0}, 500, 'swing');

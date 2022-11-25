@@ -1,0 +1,68 @@
+@mixin font($color, $font-size, $font-weight) {
+  color: $color;
+  font : {
+    size: $font-size;
+    weight: $font-weight;
+  }
+}
+
+.tab_menu {
+  width: 100%;
+  .tab {
+    display: flex;
+    li {
+      width: 50%;
+      border-bottom: 2px solid $gray5;
+      text-align: center;
+    }
+    .tab_item {
+      padding: 10px 20px;
+    }
+    .tab_item.active {
+      border-bottom: 2px solid $point2;
+    }
+  }
+  .tab_inner_wrap {
+    .tab_inner {
+      padding-top: 30px;
+      display: none;
+      .prog {
+        p {
+          @include font($color: $font-color3, $font-size: 12px, $font-weight: 300);
+        }
+        a {
+          .prog_wrap {
+            margin-top: 30px;
+            img {
+            }
+            h5 {
+              margin-top: 15px;
+              @include font($color: $gray1, $font-size: 18px, $font-weight: 500);
+            }
+            p {
+              @include font($color: $gray2, $font-size: 12px, $font-weight: 300);
+            }
+          }
+        }
+      }
+      .end {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        img {
+          width: 30%;
+          margin-bottom: 20px;
+        }
+        p {
+          @include font($color: $font-color3, $font-size: 16px, $font-weight: 300);
+        }
+      }
+    }
+    .tab_inner.active {
+      display: block;
+    }
+  }
+}

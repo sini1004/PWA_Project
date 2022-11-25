@@ -451,5 +451,65 @@ header .top_right img {
 #dday .dday_wrap .ddayTime {
   padding: 10px 0;
 }
+.tab_menu {
+  width: 100%;
+}
+.tab_menu .tab {
+  display: flex;
+}
+.tab_menu .tab li {
+  width: 50%;
+  border-bottom: 2px solid #f8f8f8;
+  text-align: center;
+}
+.tab_menu .tab .tab_item {
+  padding: 10px 20px;
+}
+.tab_menu .tab .tab_item.active {
+  border-bottom: 2px solid #4498f2;
+}
+.tab_menu .tab_inner_wrap .tab_inner {
+  padding-top: 30px;
+  display: none;
+}
+.tab_menu .tab_inner_wrap .tab_inner .prog p {
+  color: #333;
+  font-size: 12px;
+  font-weight: 300;
+}
+.tab_menu .tab_inner_wrap .tab_inner .prog a .prog_wrap {
+  margin-top: 30px;
+}
+.tab_menu .tab_inner_wrap .tab_inner .prog a .prog_wrap h5 {
+  margin-top: 15px;
+  color: #111;
+  font-size: 18px;
+  font-weight: 500;
+}
+.tab_menu .tab_inner_wrap .tab_inner .prog a .prog_wrap p {
+  color: #444;
+  font-size: 12px;
+  font-weight: 300;
+}
+.tab_menu .tab_inner_wrap .tab_inner .end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.tab_menu .tab_inner_wrap .tab_inner .end img {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.tab_menu .tab_inner_wrap .tab_inner .end p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+.tab_menu .tab_inner_wrap .tab_inner.active {
+  display: block;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
-
 "use strict";
+
 
 const $loginId = document.getElementById('LOGIN_ID');
 const $loginPw = document.getElementById('LOGIN_PW');
