@@ -347,16 +347,16 @@ li {
 }
 .progress .loading {
   width: 60%;
-  max-width: 60vw;
-  height: 22vw;
-  border-radius: 1rem;
+  max-width: 120px;
+  height: 120px;
+  border-radius: 60px;
   display: flex;
   background: #115cff;
   justify-content: center;
   align-items: flex-end;
 }
 .progress .loading img {
-  width: 40%;
+  width: 80%;
   animation: loadImg 0.5s infinite alternate cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .progress .progress-text {
