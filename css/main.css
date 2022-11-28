@@ -576,8 +576,8 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
-  border-bottom: 1px solid hsl(237deg, 13%, 33%);
+  padding: 10px 0;
+  border-bottom: 1px solid #e3ecff;
 }
 .todo-items li .todo-right {
   margin-left: 8px;
@@ -590,7 +590,7 @@ li {
   border-radius: 5px;
 }
 .todo-items li .todo-right button img {
-  width: 24px;
+  width: 20px;
 }
 
 .todo-left {
@@ -615,8 +615,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
-  color: var(--light-grayish-blue2);
+  padding: 10px 0;
 }
 
 .footer-menus {
