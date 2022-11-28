@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script defer src="js/menu.js"></script>
+  <script defer src="js/slide.js"></script>
   <script defer src="js/word.js"></script>
 </head>
 <body>
@@ -79,9 +80,14 @@
   <!-- main -->
   <div class="contents">  
       <!-- 메인슬라이드배너 -->
-      <div id="slide">
-        <img src="./img/main01.png" alt="">
+      <div class="slide slide_wrap">
+        <div class="slide_item item1"></div>
+        <div class="slide_item item2"></div>
+        <div class="slide_item item3"></div>
+        <ul class="slide_pagination"></ul>
       </div>
+
+
       <!-- 수능디데이 -->
       <div id="dday">
         <h3 class="dday_title">2024 수능<span>D-day</span></h3>

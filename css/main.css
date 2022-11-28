@@ -183,9 +183,82 @@ header .top_right img {
 }
 
 /* ========== slide_banner ========== */
-#slide img {
+.slide {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
   width: 100%;
+  user-select: none;
+}
+.slide .slide_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 408px;
+  flex-shrink: 0;
+  transition: left 0.15s;
   border-radius: 10px;
+}
+
+.slide_item.item1 {
+  width: 100%;
+  background: url("/img/main01.jpg");
+  background-size: cover;
+}
+
+.slide_item.item2 {
+  background: url("/img/main02.png");
+  background-size: cover;
+}
+
+.slide_item.item3 {
+  background: url("/img/main03.jpeg");
+  background-size: cover;
+}
+
+/* 페이지네이션 스타일 */
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slide_pagination {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide_pagination > li {
+  /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+  color: #e3ecff;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.slide_pagination > li.active {
+  /* 현재 슬라이드 색상은 투명도 없이 */
+  color: #115cff;
+}
+
+.slide_item_duplicate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 300px;
+  flex-shrink: 0;
+  transition: left 0.15s;
 }
 
 /* ========== everyday_button ========== */
