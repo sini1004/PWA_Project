@@ -599,8 +599,11 @@ header .top_right img {
 .tab_menu .tab_inner_wrap .tab_inner .prog a .prog_wrap {
   margin-top: 30px;
 }
+.tab_menu .tab_inner_wrap .tab_inner .prog a .prog_wrap img {
+  width: 100%;
+}
 .tab_menu .tab_inner_wrap .tab_inner .prog a .prog_wrap h5 {
-  margin-top: 15px;
+  margin-top: 10px;
   color: #111;
   font-size: 18px;
   font-weight: 500;
