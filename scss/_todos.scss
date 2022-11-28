@@ -81,13 +81,28 @@
   background-color: $white;
   border-radius: 8px;
 }
+.todo-items-wrapper {
+  height: 300px;
+  overflow-y: scroll;
+}
+.todo-items-wrapper::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+.todo-items-wrapper::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: $main-bg;
+  border-radius: 10px;
+}
+.todo-items-wrapper::-webkit-scrollbar-track {
+  background: $white;
+}
 .todo-items {
   list-style: none;
   li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 5px 10px 0;
     border-bottom: 1px solid $point1;
     .todo-right {
       margin-left: 8px;

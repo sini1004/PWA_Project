@@ -134,6 +134,7 @@ header .top_right img {
 #gnb .inner .info_user .info_login {
   font-weight: bold;
   letter-spacing: -1.8px;
+  color: #115cff;
 }
 #gnb .inner .info_user .info_inquiry {
   font-size: 13px;
@@ -317,8 +318,8 @@ li {
   display: block;
 }
 #englishword .word span:nth-child(1) {
-  letter-spacing: 2px;
-  font-size: 28px;
+  letter-spacing: 1px;
+  font-size: 26px;
   font-weight: 800;
 }
 #englishword .word span:nth-child(2) {
@@ -495,8 +496,27 @@ li {
   list-style: none;
   background: #e3ecff;
   padding: 0.5rem;
-  margin: 0.4rem 0;
+  margin: 0.5rem;
   border-radius: 8px;
+}
+
+#recordList {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+#recordList::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+#recordList::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #f0f4f7;
+  border-radius: 10px;
+}
+
+#recordList::-webkit-scrollbar-track {
+  background: #ffffff;
 }
 
 /* ========== todos ========== */
@@ -569,6 +589,25 @@ li {
   border-radius: 8px;
 }
 
+.todo-items-wrapper {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.todo-items-wrapper::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+.todo-items-wrapper::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #f0f4f7;
+  border-radius: 10px;
+}
+
+.todo-items-wrapper::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
 .todo-items {
   list-style: none;
 }
@@ -576,7 +615,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 5px 10px 0;
   border-bottom: 1px solid #e3ecff;
 }
 .todo-items li .todo-right {

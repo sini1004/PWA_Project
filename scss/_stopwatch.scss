@@ -45,6 +45,7 @@
     }
   }
 }
+
 #recordsCover {
   width: 100%;
   margin: auto;
@@ -56,8 +57,24 @@
       list-style: none;
       background: $point1;
       padding: 0.5rem;
-      margin: 0.4rem 0;
+      margin: 0.5rem;
       border-radius: 8px;
     }
   }
+}
+
+#recordList {
+  height: 300px;
+  overflow-y: scroll;
+}
+#recordList::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+#recordList::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: $main-bg;
+  border-radius: 10px;
+}
+#recordList::-webkit-scrollbar-track {
+  background: $white;
 }
