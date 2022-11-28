@@ -115,13 +115,11 @@
   text-decoration: line-through;
   opacity: 0.4;
 }
-
 .todo-left input[type="checkbox"] {
   width: 20px;
   height: 20px;
   margin-right: 8px;
 }
-
 .todo-footer {
   display: flex;
   align-items: center;
@@ -134,20 +132,19 @@
   align-items: center;
   list-style: none;
   font-size: 14px;
-}
-.footer-menus li {
-  margin-right: 6px;
-  margin-left: 6px;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  li {
+    margin-right: 6px;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
 }
 .footer-menus li:hover,
 .footer-menus li.selected {
   color: #5083f5;
 }
-
 .clear-completed {
   background-color: transparent;
   border: 0;
-  color: var(--light-grayish-blue2);
+  color: $gray3;
 }

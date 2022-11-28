@@ -552,7 +552,6 @@ header .top_right img {
   list-style: none;
   font-size: 14px;
 }
-
 .footer-menus li {
   margin-right: 6px;
   margin-left: 6px;
@@ -568,7 +567,7 @@ header .top_right img {
 .clear-completed {
   background-color: transparent;
   border: 0;
-  color: var(--light-grayish-blue2);
+  color: #adadad;
 }
 
 .tab_menu {
