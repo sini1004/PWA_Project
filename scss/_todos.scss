@@ -37,3 +37,117 @@
     }
   }
 }
+
+/* 투두리스트 */
+.todoTitle {
+  text-align: center;
+  font-size: 24px;
+  color: $gray2;
+}
+/* TODO FORM */
+.todo_form {
+  background-color: $point2;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid $point1;
+    cursor: pointer;
+    text-indent: -999999px;
+    border-radius: 100%;
+    margin-right: 8px;
+  }
+}
+
+.todo_form input {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: $point2;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  &:focus {
+    outline: 1px solid $white;
+  }
+}
+
+/* TODO ITEMS */
+.todo-items-wrapper {
+  background-color: $white;
+  border-radius: 8px;
+}
+.todo-items {
+  list-style: none;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid hsl(237deg 13% 33%);
+    .todo-right {
+      margin-left: 8px;
+      button {
+        border: none;
+        background-color: $gray5;
+        padding: 5px;
+        margin: 0 2px;
+        border-radius: 5px;
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  color: var(--light-grayish-blue2);
+  cursor: pointer;
+}
+.todo-left.completed {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-left input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.todo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  color: var(--light-grayish-blue2);
+}
+.footer-menus {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+}
+.footer-menus li {
+  margin-right: 6px;
+  margin-left: 6px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.footer-menus li:hover,
+.footer-menus li.selected {
+  color: #5083f5;
+}
+
+.clear-completed {
+  background-color: transparent;
+  border: 0;
+  color: var(--light-grayish-blue2);
+}
