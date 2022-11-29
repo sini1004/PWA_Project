@@ -8,4 +8,34 @@ header h1 a span {
   font-weight: 500;
 }
 
+.attendTitle {
+  text-align: center;
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 50px;
+}
+.attendTitle span {
+  color: #115cff;
+}
+
+#output {
+  padding: 10px;
+  background-color: #e3ecff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#frame {
+  border: 2px solid #115cff;
+  background-color: #ffffff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+canvas {
+  width: 100%;
+}
+
 /*# sourceMappingURL=sub.css.map */

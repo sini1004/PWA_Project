@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">				</script>
 <script defer src="../js/menu.js"></script>
 <script defer src="./js/attendance.js"></script>
+<script defer src="./js/jsQR.js"></script>
 <script src="https://kit.fontawesome.com/b1e1ca77fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -77,10 +78,22 @@
 		</div>
 			
 		<div class="contents">
-      <input type="file" accept="image/*" capture="camera">
+
+      <div id="attendance">
+        <h1 class="attendTitle">출석 <span>CHECK</span></h1>
+        <div id="output">
+          <div id="outputMessage">QR코드를 카메라에 노출시켜 주세요</div>
+          <div id="outputLayer" hidden><span id="outputData"></span></div>
+        </div>
+      </div>
+      <div>
+        <div id="frame">
+          <div id="loadingMessage">🎥 비디오 스트림에 액세스 할 수 없습니다<br/>웹캠이 활성화되어 있는지 확인하십시오.</div>
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+
     </div>
-    <script>
-    </script>
   </div>
 </body>
 </html>

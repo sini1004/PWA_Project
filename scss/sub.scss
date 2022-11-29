@@ -15,3 +15,30 @@ header {
     }
   }
 }
+
+.attendTitle {
+  text-align: center;
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 50px;
+  span {
+    color: $point;
+  }
+}
+#output {
+  padding: 10px;
+  background-color: $point1;
+  border-radius: 10px;
+  text-align: center;
+}
+#frame {
+  border: 2px solid $point;
+  background-color: #ffffff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+canvas {
+  width: 100%;
+}
