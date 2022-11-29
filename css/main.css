@@ -263,6 +263,9 @@ li {
 }
 
 /* ========== 출석체크/시간표  ========== */
+#check_schedule {
+  margin-top: 40px;
+}
 #check_schedule h3 {
   color: #333;
 }
@@ -271,7 +274,7 @@ li {
 }
 #check_schedule .check_schedule_wrap .check {
   width: 50%;
-  background-color: #ffffff;
+  background-color: #64aaf5;
   padding: 15px;
   margin: 10px;
   border-radius: 10px;
@@ -279,10 +282,17 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ffffff;
+}
+#check_schedule .check_schedule_wrap .check i {
+  font-size: 21px;
+}
+#check_schedule .check_schedule_wrap .check p {
+  margin-top: 12px;
 }
 #check_schedule .check_schedule_wrap .schedule {
   width: 50%;
-  background-color: #ffffff;
+  background-color: #604ce6;
   padding: 15px;
   margin: 10px;
   border-radius: 10px;
@@ -290,7 +300,15 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ffffff;
 }
+#check_schedule .check_schedule_wrap .schedule i {
+  font-size: 21px;
+}
+#check_schedule .check_schedule_wrap .schedule p {
+  margin-top: 12px;
+}
+
 /* ========== everyday_button ========== */
 #everyday .every_wrap {
   display: flex;
