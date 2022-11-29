@@ -124,8 +124,8 @@ const $word = [
 const $eng = document.querySelector('.word span:first-child');
 const $kor = document.querySelector('.word span:last-child');
 
-console.log($word[30-1]); //마지막 단어
-console.log($word[Math.round(Math.random() * $word.length)]);
+// console.log($word[30-1]); //마지막 단어
+// console.log($word[Math.round(Math.random() * $word.length)]);
 
 const $todayWord = $word[Math.round(Math.random() * $word.length)]
 
