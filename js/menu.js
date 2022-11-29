@@ -28,7 +28,7 @@
   
   const $username = localStorage.getItem('username');
   let $userid = $username.split('@');
-console.log($userid);
+  
   $gnb_btn.addEventListener('click', function(e){
     $user.innerText = $userid[0];
   });
