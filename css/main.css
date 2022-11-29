@@ -262,6 +262,7 @@ li {
   transition: left 0.15s;
 }
 
+/* ========== 석체크/시간표  ========== */
 /* ========== everyday_button ========== */
 #everyday .every_wrap {
   display: flex;
@@ -297,7 +298,7 @@ li {
 
 /* ========== word(영단어 랜덤) ========== */
 #englishword {
-  margin-top: 40px;
+  margin: 40px 0;
 }
 #englishword .word_title {
   margin-bottom: 10px;
