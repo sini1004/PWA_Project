@@ -25,3 +25,8 @@ function color() {
 function moveToMain(){
   location.replace("./main.html");
 }
+
+
+function onChange(e){
+  localStorage.setItem('username', $loginId.value);
+}

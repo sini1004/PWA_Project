@@ -20,3 +20,15 @@
     $(this).siblings('.list_sub_wrap').slideToggle(1000);
   });
   
+
+  
+  const $user = document.querySelector('.info_login u');
+
+  const $gnb_btn = document.querySelector('.gnb_btn');
+  
+  const $username = localStorage.getItem('username');
+  let $userid = $username.split('@');
+console.log($userid);
+  $gnb_btn.addEventListener('click', function(e){
+    $user.innerText = $userid[0];
+  });
