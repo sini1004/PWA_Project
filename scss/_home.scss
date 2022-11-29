@@ -218,6 +218,26 @@ li {
   transition: left 0.15s;
 }
 
+/* ========== 석체크/시간표  ========== */
+#check_schedule {
+  h3 {
+  }
+  .check_schedule_wrap {
+    .check {
+      i {
+      }
+      p {
+      }
+    }
+    .schedule {
+      i {
+      }
+      p {
+      }
+    }
+  }
+}
+
 /* ========== everyday_button ========== */
 #everyday {
   .every_wrap {
@@ -253,7 +273,7 @@ li {
 
 /* ========== word(영단어 랜덤) ========== */
 #englishword {
-  margin-top: 40px;
+  margin: 40px 0;
   .word_title {
     margin-bottom: 10px;
     span {
