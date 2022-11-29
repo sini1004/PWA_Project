@@ -147,12 +147,15 @@ header .top_right img {
   display: flex;
   align-items: center;
 }
+#gnb .inner .list_menu li a i {
+  font-size: 21px;
+  color: #444;
+}
 #gnb .inner .list_menu li a img {
   width: 26px;
 }
 #gnb .inner .list_menu li a span {
   margin-left: 10px;
-  margin-top: 2px;
 }
 #gnb .inner .list_menu li.line {
   margin-bottom: 16px;
@@ -271,42 +274,53 @@ li {
 }
 #check_schedule .check_schedule_wrap {
   display: flex;
+  gap: 10px;
 }
 #check_schedule .check_schedule_wrap .check {
   width: 50%;
   background-color: #64aaf5;
-  padding: 15px;
-  margin: 10px;
+  padding: 20px;
+  margin: 10px 0;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.14);
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+#check_schedule .check_schedule_wrap .check a {
   color: #ffffff;
 }
-#check_schedule .check_schedule_wrap .check i {
+#check_schedule .check_schedule_wrap .check a i {
   font-size: 21px;
 }
-#check_schedule .check_schedule_wrap .check p {
-  margin-top: 12px;
+#check_schedule .check_schedule_wrap .check a p {
+  margin-top: 10px;
 }
 #check_schedule .check_schedule_wrap .schedule {
   width: 50%;
   background-color: #604ce6;
-  padding: 15px;
-  margin: 10px;
+  padding: 20px;
+  margin: 10px 0;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.14);
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+#check_schedule .check_schedule_wrap .schedule a {
   color: #ffffff;
 }
-#check_schedule .check_schedule_wrap .schedule i {
+#check_schedule .check_schedule_wrap .schedule a i {
   font-size: 21px;
 }
-#check_schedule .check_schedule_wrap .schedule p {
-  margin-top: 12px;
+#check_schedule .check_schedule_wrap .schedule a p {
+  margin-top: 10px;
 }
 
 /* ========== everyday_button ========== */
@@ -318,6 +332,8 @@ li {
 }
 #everyday .every_wrap a {
   width: 40%;
+  color: #444;
+  font-size: 24px;
 }
 #everyday .every_wrap .timer {
   border-right: 2px solid #ecedf1;
@@ -339,7 +355,7 @@ li {
 #everyday .every_wrap .todo p {
   color: #444;
   font-size: 1.1rem;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 /* ========== word(영단어 랜덤) ========== */
@@ -491,6 +507,9 @@ li {
   font-size: 24px;
   color: #444;
 }
+.stopwatchTitle span {
+  color: #115cff;
+}
 
 .watch {
   width: 100%;
@@ -596,6 +615,10 @@ li {
   text-align: center;
   font-size: 24px;
   color: #444;
+  margin-bottom: 50px;
+}
+.todoTitle span {
+  color: #115cff;
 }
 
 /* TODO FORM */
@@ -781,7 +804,7 @@ li {
 }
 .tab_menu .tab_inner_wrap .tab_inner .end img {
   width: 30%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .tab_menu .tab_inner_wrap .tab_inner .end p {
   color: #333;
