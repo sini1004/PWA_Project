@@ -23,12 +23,16 @@
 
   
   const $user = document.querySelector('.info_login u');
-
   const $gnb_btn = document.querySelector('.gnb_btn');
   
   const $username = localStorage.getItem('username');
-  let $userid = $username.split('@');
+  const $userid = $username.split('@');
   
   $gnb_btn.addEventListener('click', function(e){
     $user.innerText = $userid[0];
   });
+
+  const $logout = document.querySelector('.login a');
+  $logout.addEventListener('click', ()=>{
+    localStorage.removeItem('username');
+  })
