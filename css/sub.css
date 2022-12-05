@@ -38,4 +38,40 @@ canvas {
   width: 100%;
 }
 
+#schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+#schedule img {
+  width: 30%;
+  margin-bottom: 50px;
+}
+#schedule p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+#schedule img {
+  width: 30%;
+  margin-bottom: 50px;
+}
+#schedule p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 /*# sourceMappingURL=sub.css.map */

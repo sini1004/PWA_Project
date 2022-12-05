@@ -42,3 +42,43 @@ header {
 canvas {
   width: 100%;
 }
+
+@mixin sub_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+@mixin sub_page_img {
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+@mixin sub_page_p {
+  color: $font-color3;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#schedule {
+  @include sub_page();
+  img {
+    @include sub_page_img();
+  }
+  p {
+    @include sub_page_p();
+  }
+}
+
+#schedule {
+  @include sub_page();
+  img {
+    @include sub_page_img();
+  }
+  p {
+    @include sub_page_p();
+  }
+}
