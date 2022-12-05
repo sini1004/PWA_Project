@@ -63,7 +63,7 @@ canvas {
   font-weight: 300;
 }
 
-#schedule {
+#academy {
   @include sub_page();
   img {
     @include sub_page_img();
@@ -74,6 +74,36 @@ canvas {
 }
 
 #schedule {
+  @include sub_page();
+  img {
+    @include sub_page_img();
+  }
+  p {
+    @include sub_page_p();
+  }
+}
+
+#lecture {
+  @include sub_page();
+  img {
+    @include sub_page_img();
+  }
+  p {
+    @include sub_page_p();
+  }
+}
+
+#notice {
+  @include sub_page();
+  img {
+    @include sub_page_img();
+  }
+  p {
+    @include sub_page_p();
+  }
+}
+
+#teacher {
   @include sub_page();
   img {
     @include sub_page_img();

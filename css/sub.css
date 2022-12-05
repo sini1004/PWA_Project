@@ -38,7 +38,7 @@ canvas {
   width: 100%;
 }
 
-#schedule {
+#academy {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,11 +46,11 @@ canvas {
   text-align: center;
   height: 100vh;
 }
-#schedule img {
+#academy img {
   width: 30%;
   margin-bottom: 50px;
 }
-#schedule p {
+#academy p {
   color: #333;
   font-size: 16px;
   font-weight: 300;
@@ -69,6 +69,60 @@ canvas {
   margin-bottom: 50px;
 }
 #schedule p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#lecture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+#lecture img {
+  width: 30%;
+  margin-bottom: 50px;
+}
+#lecture p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+#notice img {
+  width: 30%;
+  margin-bottom: 50px;
+}
+#notice p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#teacher {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+#teacher img {
+  width: 30%;
+  margin-bottom: 50px;
+}
+#teacher p {
   color: #333;
   font-size: 16px;
   font-weight: 300;
