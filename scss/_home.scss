@@ -38,6 +38,11 @@ header {
     @include header_top();
     left: 12px;
     .ico_alarm {
+      i {
+        padding-top: 28px;
+        font-size: 24px;
+        color: $font-color2;
+      }
       img {
         width: 29px;
       }
@@ -341,6 +346,16 @@ li {
           weight: 300;
         }
       }
+    }
+  }
+}
+
+/* ========== youtube(영상) ========== */
+#youtube {
+  .youtube {
+    width: 100%;
+    iframe {
+      border-radius: 10px;
     }
   }
 }

@@ -82,6 +82,11 @@ header .top_left {
   top: 0px;
   left: 12px;
 }
+header .top_left .ico_alarm i {
+  padding-top: 28px;
+  font-size: 24px;
+  color: #222;
+}
 header .top_left .ico_alarm img {
   width: 29px;
 }
@@ -389,6 +394,14 @@ li {
   margin-top: 10px;
   font-size: 21px;
   font-weight: 300;
+}
+
+/* ========== youtube(영상) ========== */
+#youtube .youtube {
+  width: 100%;
+}
+#youtube .youtube iframe {
+  border-radius: 10px;
 }
 
 /* ========== progress ========== */

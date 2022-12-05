@@ -7,10 +7,9 @@
   <title>CHWEDU</title>
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/sub.css" />
+  <script defer src="./js/event.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">				</script>
 <script defer src="../js/menu.js"></script>
-<script defer src="./js/attendance.js"></script>
-<script defer src="./js/jsQR.js"></script>
 <script src="https://kit.fontawesome.com/b1e1ca77fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,7 +19,7 @@
     <header>
       <h1>
         <a href="#">
-          <span>출석하기</span>
+          <span>시간표</span>
         </a>
       </h1>
       <div class="top_left">
@@ -81,22 +80,50 @@
 		</div>
 			
 		<div class="contents">
-
-      <div id="attendance">
-        <h1 class="attendTitle">출석 <span>CHECK</span></h1>
-        <div id="output">
-          <div id="outputMessage">QR코드를 카메라에 노출시켜 주세요</div>
-          <div id="outputLayer" hidden><span id="outputData"></span></div>
-        </div>
-      </div>
-      <div>
-        <div id="frame">
-          <div id="loadingMessage">🎥 비디오 스트림에 액세스 할 수 없습니다.<br/>웹캠이 활성화되어 있는지 확인하십시오.</div>
-          <canvas id="canvas"></canvas>
-        </div>
-      </div>
-
+      <div class="tab_menu">
+        <ul class="tab">
+            <li class="tab_item active">진행 중 이벤트</li>
+            <li class="tab_item">종료된 이벤트</li>
+        </ul>
+        <div class="tab_inner_wrap">
+            <div class="tab_inner active">
+              <div class="prog">
+                <p>총 3개</p>
+                <a href="#">
+                  <div class="prog_wrap">
+                    <img src="../img/event1.png" alt="event1">
+                    <h5>2023신학기</h5>
+                    <p>2023-01-09~2023-02-28</p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="prog_wrap">
+                    <img src="../img/event2.png" alt="event2">
+                    <h5>겨울방학 특강 등록 이벤트 </h5>
+                    <p>2022-12-05~2022-12-16</p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="prog_wrap">
+                    <img src="../img/event3.png" alt="event3">
+                    <h5>기말고사 만점 이벤트</h5>
+                    <p>2022-12-08~2022-12-21</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="tab_inner">
+              <div class="end">
+                <img src="../img/event_no.png" alt="event_no">
+                <p>현재 종료된 이벤트가 없습니다.</p>
+              </div>
+            </div>
+        </div>  
+      </div>  
     </div>
+
+
   </div>
+
 </body>
 </html>
