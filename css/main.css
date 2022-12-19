@@ -215,17 +215,17 @@ header .top_right img {
 
 .slide_item.item1 {
   width: 100%;
-  background: url("/img/main01.jpg");
+  background: url("img/main01.jpg");
   background-size: cover;
 }
 
 .slide_item.item2 {
-  background: url("/img/main02.png");
+  background: url("img/main02.png");
   background-size: cover;
 }
 
 .slide_item.item3 {
-  background: url("/img/main03.jpeg");
+  background: url("img/main03.jpeg");
   background-size: cover;
 }
 
